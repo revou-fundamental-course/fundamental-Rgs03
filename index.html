@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portofolio Revan</title>
+  </head>
+  <body>
+    <!-- LOGIN -->
+    <section class="login" id="login">
+      <div class="login-card">
+        <header>
+          <h1 class="login-title">
+            Halo!!! Sebelum lanjut isi nama kamu disini dulu ya!!!
+          </h1>
+        </header>
+        <div class="login-form">
+          <input
+            type="text"
+            placeholder="Masukkan nama kamu disini..."
+            class="login-input"
+            id="loginInput"
+          />
+          <input
+            class="login-btn"
+            onclick="masuk()"
+            type="submit"
+            value="Masuk"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- NAVBAR -->
+    <header class="nav-container">
+      <div class="logo"></div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#profile">Our Profile</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#message">message Us</a>
+      </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+      <section class="home" id="home">
+        <header>
+          <h1>Hi <span id="user"></span>, Welcome To My Website</h1>
+        </header>
+        <article>
+          <p>Ini adalah website portofolio saya</p>
+
+          <div class="banner-container"></div>
+        </article>
+      </section>
+      <!-- Our Profile -->
+      <section class="profile" id="profile">
+        <header>
+          <h1>Our Profile</h1>
+          <article class="profile-wrapper row">
+            <div class="profile-item">
+              <div class="profile-icon profile1"></div>
+              <p>Bird</p>
+            </div>
+            <div class="profile-item">
+              <div class="profile-icon profile2"></div>
+              <p>Lion</p>
+            </div>
+            <div class="profile-item">
+              <div class="profile-icon profile3"></div>
+              <p>Duck</p>
+            </div>
+          </article>
+        </header>
+      </section>
+      <section class="portofolio" id="portofolio">
+        <header>
+          <h1>Portofolio</h1>
+        </header>
+        <div class="portofolio-wrapper">
+          <div class="portofolio-img"></div>
+          <div class="skill">
+            <p class="portofolio-title">
+              bahasa pemrograman yang sudah saya kuasai
+            </p>
+            <ul class="portofolio-language">
+              <li>
+                <a href="https://www.python.org/" target="_blank">Python</a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/js/" target="_blank"
+                  >Javascript</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/php/" target="_blank">PHP</a>
+              </li>
+              <li><a href="https://go.dev/" target="_blank">GO</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="message" id="message">
+        <header>
+          <h1>Message Us</h1>
+        </header>
+        <div class="message-container">
+          <div class="message-wrapper">
+            <div class="message-form">
+              <div class="name form">
+                <label for="name">Nama:</label>
+                <input type="text" placeholder="Nama" id="name" class="input" />
+              </div>
+              <div class="date form">
+                <label for="birthday">Tanggal Lahir:</label>
+                <input type="date" id="birthday" class="input" />
+              </div>
+              <div class="gender form">
+                <label>Jenis Kelamin:</label>
+                <div class="inp-gender">
+                  <label>
+                    <input
+                      type="radio"
+                      id="gender"
+                      name="gender"
+                      value="Laki-Laki"
+                    />
+                    Laki-Laki
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      id="gender"
+                      name="gender"
+                      value="Perempuan"
+                    />
+                    Perempuan
+                  </label>
+                </div>
+              </div>
+              <div class="pesan form">
+                <label for="pesan">Pesan:</label>
+                <textarea
+                  type="text"
+                  placeholder="Pesan"
+                  id="pesan"
+                  rows="2"
+                  class="input"
+                ></textarea>
+              </div>
+              <div class="btn-group">
+                <button type="submit" onclick="kirim()" class="submit-btn">
+                  Submit
+                </button>
+              </div>
+            </div>
+            <div class="output-container">
+              <div class="message-output">
+                <p class="current-time">
+                  <b>Current Time:</b> <span id="time"></span>
+                </p>
+                <p><b>Nama:</b> <span id="out-name"></span></p>
+                <p><b>Tanggal Lahir:</b> <span id="out-date"></span></p>
+                <p><b>Jenis Kelamin:</b> <span id="out-gender"></span></p>
+                <p><b>Pesan:</b> <span id="out-message"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Created By Revan</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
